@@ -1,0 +1,31 @@
+{% load static %}
+<!doctype html>
+<html lang="ko">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" type="text/css" href="{% static 'bootstrap.min.css' %}">
+    <!-- pybo CSS -->
+    <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
+    <title>Hello, pybo!</title>
+
+</head>
+<body>
+{% include "navbar.html" %}
+<!-- Contents to be inserted into a basic template start -->
+{% block content %}
+{% endblock %}
+<!-- Contents to be inserted into a basic template End -->
+<!-- jQuery JS -->
+<script src="{% static 'jquery-3.6.0.min.js' %}"></script>
+<!-- bootstrap -->
+<script src="{% static 'bootstrap.min.js' %}"></script>
+<!-- JavaScript Start -->
+{% block script %}
+{% endblock %}
+<!-- JavaScript End -->
+<!-- Contents to be inserted into the basic template -->
+</body>
+</html>
